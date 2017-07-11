@@ -6,7 +6,7 @@ import { Room1Component }   from './room1/room1.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'player',
     component: PlayerComponent
   },
   {
