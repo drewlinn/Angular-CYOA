@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PlayerComponent } from './player/player.component';
 import { Room0Component } from './room0/room0.component';
 import { Room1Component } from './room1/room1.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Room1Component } from './room1/room1.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

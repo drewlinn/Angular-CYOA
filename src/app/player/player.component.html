@@ -1,3 +1,16 @@
-<p>
-  player works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Welcome to Choose Your Own DOOM!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>State your name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <button (click)="submitForm(newName.value); newName.value='' ">Add</button>
+    </div>
+  </div>
+</div>
