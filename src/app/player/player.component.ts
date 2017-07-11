@@ -8,7 +8,9 @@ import { Player } from '../player.model';
   styleUrls: ['./player.component.css'],
   providers: [ PlayerService]
 })
+
 export class PlayerComponent implements OnInit {
+  name: string;
 
   constructor(private playerService: PlayerService) { }
 
@@ -19,5 +21,6 @@ export class PlayerComponent implements OnInit {
   {
     var newPlayer: Player = new Player(name, points);
     this.playerService.addPlayer(newPlayer);
+    console.log(newPlayer);
   }
 }
