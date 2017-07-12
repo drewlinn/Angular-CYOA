@@ -17,9 +17,9 @@ export class PlayerComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, points: number)
+  submitForm(name: string, body: number, heart: number, mind: number, spirit: number, gold: number)
   {
-    var newPlayer: Player = new Player(name, points);
+    var newPlayer: Player = new Player(name, body, heart, mind, spirit, gold);
     this.playerService.addPlayer(newPlayer);
     console.log(newPlayer);
   }

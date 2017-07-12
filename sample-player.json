@@ -1,0 +1,30 @@
+{ "players": [{
+    "name": "Fighter",
+    "body": 4,
+    "heart": 1,
+    "mind": 1,
+    "spirit": 1,
+    "gold": 0
+    }, {
+    "name": "Rogue",
+    "body": 1,
+    "heart": 4,
+    "mind": 1,
+    "spirit": 1,
+    "gold": 0
+    }, {
+    "name": "Mage",
+    "body": 1,
+    "heart": 1,
+    "mind": 4,
+    "spirit": 1,
+    "gold": 0
+    }, {
+    "name": "Acolyte",
+    "body": 1,
+    "heart": 1,
+    "mind": 1,
+    "spirit": 4,
+    "gold": 0
+  }]
+}

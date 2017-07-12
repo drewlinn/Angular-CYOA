@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Player } from './player.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class PlayerService {
 
-  players: Player[] = [];
+  players: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.players = database.list('albums');
+  }
 
   addPlayer(newPlayer: Player)  {
     this.players.push(newPlayer);
