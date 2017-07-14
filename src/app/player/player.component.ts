@@ -12,14 +12,16 @@ import { Player } from '../player.model';
 export class PlayerComponent implements OnInit {
   name: string;
 
+  abilityPoints: number = 8;
+
   constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
   }
 
-  submitForm(name: string, body: number, heart: number, mind: number, spirit: number, gold: number)
+  submitForm(name: string, gender: string, body: number, heart: number, mind: number, spirit: number, inventory: string[], gold: number = 0)
   {
-    var newPlayer: Player = new Player(name, body, heart, mind, spirit, gold);
+    var newPlayer: Player = new Player(name, gender, body, heart, mind, spirit, inventory, gold);
     this.playerService.addPlayer(newPlayer);
     console.log(newPlayer);
   }

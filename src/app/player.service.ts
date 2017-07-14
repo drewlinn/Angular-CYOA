@@ -11,6 +11,10 @@ export class PlayerService {
     this.players = database.list('albums');
   }
 
+  getPlayers(){
+    return this.players;
+  }
+
   addPlayer(newPlayer: Player)  {
     this.players.push(newPlayer);
   }

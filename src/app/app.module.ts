@@ -12,6 +12,11 @@ import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { EditCharacterComponent } from './edit-character/edit-character.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +30,12 @@ export const firebaseConfig = {
     AppComponent,
     PlayerComponent,
     Room0Component,
-    Room1Component
+    Room1Component,
+    CharactersComponent,
+    CharacterDetailComponent,
+    WelcomeComponent,
+    EditCharacterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

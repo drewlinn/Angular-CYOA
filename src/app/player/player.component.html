@@ -8,6 +8,29 @@
         <label>State your name:</label>
         <br>
         <input #newName>
+        <label>What is your gender?:</label>
+        <br>
+        <select #newGender>
+          <option>Other</option>
+          <option>Female</option>
+          <option>Male</option>
+        </select>
+        <label>What did your father do for a living?:</label>
+        <br>
+        <input #newBody>
+        <button></button>
+        <label>What does your mother do for a living?:</label>
+        <br>
+        <input #newHeart>
+        <button></button>
+        <label>How did you spend your childhood?</label>
+        <br>
+        <input #newMind>
+        <button></button>
+        <label>What do you do for a living now?</label>
+        <br>
+        <input #newSpirit>
+        <button></button>
       </div>
 
       <button (click)="submitForm(newName.value); newName.value='' ">Add</button>

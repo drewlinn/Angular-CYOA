@@ -1,0 +1,7 @@
+<h2>Marketplace</h2>
+
+<div *ngFor="let player of players | async" (click)="goToDetailPage(album)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{player.name}}</em> {{player.gender}}</h3>
+  </div>
+</div>
